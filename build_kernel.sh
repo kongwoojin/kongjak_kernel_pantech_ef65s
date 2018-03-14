@@ -23,8 +23,8 @@ export CROSS_COMPILE=arm-eabi-
 ##############################################################################
 mkdir -p ./obj/KERNEL_OBJ/
 #make O=./obj/KERNEL_OBJ/ 
-make ARCH=arm O=./obj/KERNEL_OBJ/ msm8974_ef65s_tp20_user_defconfig
-make -j8 ARCH=arm O=./obj/KERNEL_OBJ/ 2>&1 | tee kernel_log.txt
+make ARCH=arm O=./obj/KERNEL_OBJ/ kongjak_ef65s_defconfig
+make -j16 ARCH=arm O=./obj/KERNEL_OBJ/ 2>&1 | tee kernel_log.txt
 
 ##############################################################################
 # Copy Kernel Image
